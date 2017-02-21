@@ -1,3 +1,5 @@
+package org.proofguru.com;
+
 public class Calculator {
 
 	public int add(int x, int y) {

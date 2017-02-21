@@ -1,36 +1,64 @@
-import static org.junit.Assert.assertEquals;
+package org.proofguru.com;
 
-import org.junit.Test;
+import junit.framework.Test;
+import junit.framework.TestCase;
+import junit.framework.TestSuite;
 
-public class Tester {
-    @Test
+/**
+ * Unit test for simple App.
+ */
+public class Tester 
+    extends TestCase
+{
+    /**
+     * Create the test case
+     *
+     * @param testName name of the test case
+     */
+    public Tester( String testName )
+    {
+        super( testName );
+    }
+
+    /**
+     * @return the suite of tests being tested
+     */
+    public static Test suite()
+    {
+        return new TestSuite( Tester.class );
+    }
+
+    /**
+     * Rigourous Test :-)
+     */
+    public void testApp()
+    {
+        assertTrue( true );
+    }
+    
     public void testAddition1() {
 		Calculator calculator = new Calculator();
     	assertEquals(2, calculator.add(1, 1));
 	}
 
-	@Test
     public void testAddition2() {
 		Calculator calculator = new Calculator();
     	assertEquals(6, calculator.add(3, 4));
 	}
 
-	@Test
     public void testAddition3() {
 		Calculator calculator = new Calculator();
     	assertEquals(10, calculator.add(5, 5));
 	}
 
-    @Test
     public void testSubtraction1() {
 		Calculator calculator = new Calculator();
     	assertEquals(2, calculator.subtract(5,3));
 	}
 
-	@Test
     public void testSubtraction2() {
 		Calculator calculator = new Calculator();
     	assertEquals(5, calculator.subtract(12,8));
 	}
-
+	
 }

@@ -15,6 +15,12 @@ public class Tester {
     	assertEquals(6, calculator.add(3, 4));
 	}
 
+	@Test
+    public void testAddition3() {
+		Calculator calculator = new Calculator();
+    	assertEquals(10, calculator.add(5, 5));
+	}
+
     @Test
     public void testSubtraction1() {
 		Calculator calculator = new Calculator();

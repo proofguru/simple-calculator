@@ -43,7 +43,7 @@ public class Tester
 
     public void testAddition2() {
 		Calculator calculator = new Calculator();
-    	assertEquals(6, calculator.add(3, 4));
+    	assertEquals(7, calculator.add(3, 4));
 	}
 
     public void testAddition3() {
@@ -58,7 +58,7 @@ public class Tester
 
     public void testSubtraction2() {
 		Calculator calculator = new Calculator();
-    	assertEquals(5, calculator.subtract(12,8));
+    	assertEquals(4, calculator.subtract(12,8));
 	}
 	
 }

@@ -14,6 +14,8 @@ deploy:
   access_key_id: AKIAIV2WBWIDYMDXQFCQ #populate with your own AWS access key
   secret_access_key: SHUtFPoBPqdsavfZVMYWkkqEYKO7D3jFZkzqhJwT #populate with your own AWS secret key
   bucket: proofguru-bucket
+  endpoint: http://proofguru-bucket.s3-website-us-east-1.amazonaws.com
+  region: us-east-1
   skip_cleanup: true
   local-dir: src/amazonS3
   region: us-west-2

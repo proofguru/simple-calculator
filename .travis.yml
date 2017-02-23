@@ -11,8 +11,8 @@ after_success:
 
 deploy:
   provider: s3
-  access_key_id: AKIAIV2WBWIDYMDXQFCQ
-  secret_access_key: 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
+  access_key_id: AKIAIJWMPBV4U46RHO2Q
+  secret_access_key: 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
   bucket: proofguru-bucket
   endpoint: http://proofguru-bucket.s3-website-us-east-1.amazonaws.com
   skip_cleanup: true

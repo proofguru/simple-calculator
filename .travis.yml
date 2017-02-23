@@ -8,3 +8,12 @@ script:
 
 after_success:
   - bash <(curl -s https://codecov.io/bash) -t 415fa45f-a930-4e63-9ee8-acc3c3e9ed5f
+
+deploy:
+  provider: s3
+  access_key_id: AKIAIV2WBWIDYMDXQFCQ #populate with your own AWS access key
+  secret_access_key: SHUtFPoBPqdsavfZVMYWkkqEYKO7D3jFZkzqhJwT #populate with your own AWS secret key
+  bucket: proofguru-bucket
+  skip_cleanup: true
+  local-dir: src/amazonS3
+  region: us-west-2

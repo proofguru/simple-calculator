@@ -11,8 +11,8 @@ after_success:
 
 deploy:
   provider: s3
-  access_key_id: AKIAIV2WBWIDYMDXQFCQ #populate with your own AWS access key
-  secret_access_key: SHUtFPoBPqdsavfZVMYWkkqEYKO7D3jFZkzqhJwT #populate with your own AWS secret key
+  access_key_id: AKIAIV2WBWIDYMDXQFCQ
+  secret_access_key: SHUtFPoBPqdsavfZVMYWkkqEYKO7D3jFZkzqhJwT
   bucket: proofguru-bucket
   endpoint: http://proofguru-bucket.s3-website-us-east-1.amazonaws.com
   skip_cleanup: true

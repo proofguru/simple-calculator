@@ -61,4 +61,9 @@ public class Tester
     	assertEquals(4, calculator.subtract(12,8));
 	}
 	
+    public void testMultiplication() {
+		Calculator calculator = new Calculator();
+    	assertEquals(12, calculator.multiply(3,4));
+	}
+	
 }
